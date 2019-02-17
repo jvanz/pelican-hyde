@@ -12,7 +12,21 @@
 			<p class="lead">{{ BIO }} </p>
 			<p></p>
 		</div>
-		<nav class="sidebar-nav">
+		{% if MENUITEMS or DISPLAY_PAGES_ON_MENU %}
+			<ul class="sidebar-nav">
+			{% if MENUITEMS %}
+				{% for title, url in MENUITEMS %}
+					<li><a href="{{ SITEURL }}/{{ url }}">{{ title }}</a></li>
+				{% endfor %}
+			{% endif %}
+			{% if DISPLAY_PAGES_ON_MENU %}
+				{% for p in pages %}
+					<li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+				{% endfor %}
+			{% endif %}
+			</ul>
+		{% endif %}
+		<nav class="sidebar-social">
 			{% for name, link in SOCIAL %}
 				{% if name == 'email' %}
 					<a class="sidebar-nav-item" href="mailto:{{ link }}">

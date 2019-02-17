@@ -98,6 +98,13 @@ html {
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sidebar-nav-item {
   display: block;

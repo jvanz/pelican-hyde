@@ -17,10 +17,13 @@ List of Pelican's settings that are supported by this theme. Refer to the
 for more details.
 
 - `FEED_*` and `*_FEED_*`
+- `DISPLAY_PAGES_ON_MENU`
 - `DISQUS_SITENAME`
 - `GOOGLE_ANALYTICS`
 - `GA_COOKIE_DOMAIN`
 - `SITESUBTITLE`
+- `MENUITEMS`
+- `SOCIAL`
 
 Additional settings:
 
