@@ -18,6 +18,17 @@
 					<a class="sidebar-nav-item" href="mailto:{{ link }}">
 						<i class="fas fa-envelope"></i>
 					</a>
+				{% elif name in ['academia', 'acclaim', 'acm', 'acmdl', 'ads', 'arxiv',
+						 'biorxiv', 'ceur', 'coursera', 'cv', 'dataverse',
+						 'dblp', 'depsy', 'doi', 'dryad', 'figshare',
+						 'google-scholar', 'ideas-repec', 'ieee', 'impactstory',
+						 'inspire', 'lattes', 'mathoverflow', 'open-access',
+						 'osf', 'overleaf', 'philpapers', 'piazza', 'publons',
+						 'pubmed', 'researcherid', 'scirate', 'semantic-scholar',
+						 'springer', 'zotero'] %}
+					<a class="sidebar-nav-item" href="{{ link }}">
+						<i class="ai ai-{{ name }}"></i>
+					</a>
 				{% else %}
 					<a class="sidebar-nav-item" href="{{ link }}">
 						<i class="fab fa-{{ name }}"></i>
