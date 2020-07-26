@@ -29,7 +29,7 @@
 		<nav class="sidebar-social">
 			{% for name, link in SOCIAL %}
 				{% if name == 'email' %}
-					<a class="sidebar-nav-item" href="mailto:{{ link }}">
+					<a class="sidebar-social-item" href="mailto:{{ link }}">
 						<i class="fa fa-envelope"></i>
 					</a>
 				{% elif name in ['academia', 'acclaim', 'acm', 'acmdl', 'ads', 'arxiv',
@@ -40,16 +40,16 @@
 						 'osf', 'overleaf', 'philpapers', 'piazza', 'publons',
 						 'pubmed', 'researcherid', 'scirate', 'semantic-scholar',
 						 'springer', 'zotero'] %}
-					<a class="sidebar-nav-item" href="{{ link }}">
+					<a class="sidebar-social-item" href="{{ link }}">
 						<i class="ai ai-{{ name }}"></i>
 					</a>
 				{% else %}
-					<a class="sidebar-nav-item" href="{{ link }}">
+					<a class="sidebar-social-item" href="{{ link }}">
 						<i class="fa fa-{{ name }}"></i>
 					</a>
 				{% endif %}
 			{% endfor %}
-			<a class="sidebar-nav-item" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM if FEED_ALL_ATOM else FEED_ALL_RSS }}">
+			<a class="sidebar-social-item" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM if FEED_ALL_ATOM else FEED_ALL_RSS }}">
 				<i class="fa fa-rss"></i>
 			</a>
 		</nav>

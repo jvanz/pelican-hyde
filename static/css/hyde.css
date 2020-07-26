@@ -106,7 +106,7 @@ html {
   justify-content: center;
   align-items: center;
 }
-.sidebar-nav-item {
+.sidebar-social-item {
   display: block;
   padding: .25rem 0.5rem;
   background: #fff2;
@@ -118,17 +118,17 @@ html {
   float: left;
   width: 17%;
 }
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
+a.sidebar-social-item:hover,
+a.sidebar-social-item:focus {
   background: #0001;
   text-decoration: none;
 }
-.sidebar-nav-item.active {
+.sidebar-social-item.active {
   color: #0001;
   background: #fff;
 }
-a.sidebar-nav-item.active:hover,
-a.sidebar-nav-item.active:focus {
+a.sidebar-social-item.active:hover,
+a.sidebar-social-item.active:focus {
   color: #fff;
 }
 
