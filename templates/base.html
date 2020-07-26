@@ -27,13 +27,15 @@
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/poole.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/hyde.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/syntax.css" />
-		<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 		{% if FONT_AWESOME_JS %}
 			<script src="{{ FONT_AWESOME_JS }}" crossorigin="anonymous"></script>
 		{% elif FONT_AWESOME_CSS %}
 			<link rel="stylesheet" href="{{ FONT_AWESOME_CSS }}" crossorigin="anonymous">
 		{% else %}
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" crossorigin="anonymous">
+		{% endif %}
+		{% if FONT_ACADEMICONS %}
+			<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 		{% endif %}
 
 		<!-- Feeds -->

@@ -28,6 +28,7 @@ Additional settings:
 - `PROFILE_IMAGE` - image to display in the sidebar, eg. `avatar.png`
 - `FONT_AWESOME_CSS` - URL to get Font Awesome as CSS
 - `FONT_AWESOME_JS` - URL to get Font Awesome as Javascript
+- `FONT_ACADEMICONS` - set to `True` to fetch the [Academicons font](https://jpswalsh.github.io/academicons/)
 
 By default, the theme uses **Fork Awesome**, which is fetched from
 `cdn.jsdelivr.net`. Fork Awesome is a drop-in replacement for Font Awesome v4,
