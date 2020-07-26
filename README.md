@@ -26,6 +26,8 @@ Additional settings:
 
 - `BIO` - short biography to display in the sidebar, eg. `Hello world`
 - `PROFILE_IMAGE` - image to display in the sidebar, eg. `avatar.png`
+- `COLOR_THEME` - base colors for the theme, choose from `08` to `0f`,
+  refer to <https://github.com/poole/hyde> for details.
 - `FONT_AWESOME_CSS` - URL to get Font Awesome as CSS
 - `FONT_AWESOME_JS` - URL to get Font Awesome as Javascript
 - `FONT_ACADEMICONS` - set to `True` to fetch the [Academicons font](https://jpswalsh.github.io/academicons/)

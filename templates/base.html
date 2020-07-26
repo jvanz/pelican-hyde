@@ -45,7 +45,7 @@
 		{% include 'fragments/google_analytics.html' %}
 	</head>
 
-	<body class="theme-base-0d">
+	<body class="theme-base-{{ COLOR_THEME if COLOR_THEME else '0d' }}">
 		{% include 'sidebar.html' %}
 		<div class="content container">
 			{% block content %}
