@@ -91,7 +91,7 @@ html {
 .sidebar-about .profile-picture {
   margin: 0 auto;
   border-radius: 50%;
-  border: 2px solid #5b8da2;
+  border: 2px solid #0001;
   max-width: 5rem;
 }
 
@@ -102,7 +102,7 @@ html {
 .sidebar-nav-item {
   display: block;
   padding: .25rem 0.5rem;
-  background: #7dafc4;
+  background: #fff2;
   margin: 0 .2rem;
   border-radius: .25rem;
   text-transform: uppercase;
@@ -113,11 +113,11 @@ html {
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
-  background: #6096ac;
+  background: #0001;
   text-decoration: none;
 }
 .sidebar-nav-item.active {
-  color: #6096ac;
+  color: #0001;
   background: #fff;
 }
 a.sidebar-nav-item.active:hover,
