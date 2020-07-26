@@ -26,4 +26,11 @@ Additional settings:
 
 - `BIO` - short biography to display in the sidebar, eg. `Hello world`
 - `PROFILE_IMAGE` - image to display in the sidebar, eg. `avatar.png`
-- `FONT_AWESOME` - Fontawesome kit, eg `https://kit.fontawesome.com/{{ FONT_AWESOME }}.js`
+- `FONT_AWESOME_CSS` - URL to get Font Awesome as CSS
+- `FONT_AWESOME_JS` - URL to get Font Awesome as Javascript
+
+By default, the theme uses **Fork Awesome**, which is fetched from
+`cdn.jsdelivr.net`. Fork Awesome is a drop-in replacement for Font Awesome v4,
+but is not compatible with Font Awesome v5 and later, so if you want to use
+Font Awesome v5+, setting `FONT_AWESOME_CSS` is not enough, you will also need
+to modify the templates.

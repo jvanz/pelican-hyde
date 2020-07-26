@@ -28,10 +28,12 @@
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/hyde.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/syntax.css" />
 		<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-		{% if FONT_AWESOME %}
-			<script src="https://kit.fontawesome.com/{{ FONT_AWESOME }}.js" crossorigin="anonymous"></script>
+		{% if FONT_AWESOME_JS %}
+			<script src="{{ FONT_AWESOME_JS }}" crossorigin="anonymous"></script>
+		{% elif FONT_AWESOME_CSS %}
+			<link rel="stylesheet" href="{{ FONT_AWESOME_CSS }}" crossorigin="anonymous">
 		{% else %}
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" crossorigin="anonymous">
 		{% endif %}
 
 		<!-- Feeds -->

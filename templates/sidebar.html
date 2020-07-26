@@ -16,7 +16,7 @@
 			{% for name, link in SOCIAL %}
 				{% if name == 'email' %}
 					<a class="sidebar-nav-item" href="mailto:{{ link }}">
-						<i class="fas fa-envelope"></i>
+						<i class="fa fa-envelope"></i>
 					</a>
 				{% elif name in ['academia', 'acclaim', 'acm', 'acmdl', 'ads', 'arxiv',
 						 'biorxiv', 'ceur', 'coursera', 'cv', 'dataverse',
@@ -31,12 +31,12 @@
 					</a>
 				{% else %}
 					<a class="sidebar-nav-item" href="{{ link }}">
-						<i class="fab fa-{{ name }}"></i>
+						<i class="fa fa-{{ name }}"></i>
 					</a>
 				{% endif %}
 			{% endfor %}
 			<a class="sidebar-nav-item" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM if FEED_ALL_ATOM else FEED_ALL_RSS }}">
-				<i class="fas fa-rss"></i>
+				<i class="fa fa-rss"></i>
 			</a>
 		</nav>
 	</div>
