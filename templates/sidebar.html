@@ -35,7 +35,7 @@
 					</a>
 				{% endif %}
 			{% endfor %}
-			<a class="sidebar-nav-item" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">
+			<a class="sidebar-nav-item" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM if FEED_ALL_ATOM else FEED_ALL_RSS }}">
 				<i class="fas fa-rss"></i>
 			</a>
 		</nav>
