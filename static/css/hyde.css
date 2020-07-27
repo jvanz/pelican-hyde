@@ -129,6 +129,11 @@ a.sidebar-social-item.active:hover,
 a.sidebar-social-item.active:focus {
   color: #fff;
 }
+.sidebar-footer {
+  font-size: .7rem;
+  margin-bottom: 0;
+  margin-top: .5rem;
+}
 
 /* Sticky sidebar
  *
