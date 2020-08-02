@@ -4,8 +4,8 @@
 	<div class="posts">
 		{% for article in articles_page.object_list %}
 			<div class="post">
-				<h1 class="post-title" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">
-					<a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a>
+				<h1 class="post-title" href="{{ SITEURL }}/{{ article.url }}">
+					<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
 				</h1>
 				<span class="post-date">{{ article.locale_date }}</span>
 				<p>
