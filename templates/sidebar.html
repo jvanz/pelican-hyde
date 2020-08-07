@@ -16,7 +16,7 @@
 			<ul class="sidebar-nav">
 			{% if MENUITEMS %}
 				{% for title, url in MENUITEMS %}
-					<li><a href="{{ SITEURL }}/{{ url }}">{{ title }}</a></li>
+					<li><a href="{{ url }}">{{ title }}</a></li>
 				{% endfor %}
 			{% endif %}
 			{% if DISPLAY_PAGES_ON_MENU %}
