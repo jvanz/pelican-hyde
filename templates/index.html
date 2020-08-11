@@ -15,6 +15,7 @@
 			</div>
 		{% endfor %}
 	</div>
+	{% if DEFAULT_PAGINATION %}
 	<div class="pagination">
 
 		{% if articles_page.has_previous() %}
@@ -30,4 +31,5 @@
 		<span class="pagination-item newer">Older</span>
 		{% endif %}
 	</div>
+	{% endif %}
 {% endblock %}

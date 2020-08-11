@@ -16,7 +16,7 @@
 			<ul class="sidebar-nav">
 			{% if MENUITEMS %}
 				{% for title, url in MENUITEMS %}
-					<li><a href="{{ SITEURL }}/{{ url }}">{{ title }}</a></li>
+					<li><a href="{{ url }}">{{ title }}</a></li>
 				{% endfor %}
 			{% endif %}
 			{% if DISPLAY_PAGES_ON_MENU %}
@@ -40,11 +40,11 @@
 						 'osf', 'overleaf', 'philpapers', 'piazza', 'publons',
 						 'pubmed', 'researcherid', 'scirate', 'semantic-scholar',
 						 'springer', 'zotero'] %}
-					<a class="sidebar-social-item" href="{{ link }}">
+					<a class="sidebar-social-item" href="{{ link }}" target="_blank">
 						<i class="ai ai-{{ name }}"></i>
 					</a>
 				{% else %}
-					<a class="sidebar-social-item" href="{{ link }}">
+					<a class="sidebar-social-item" href="{{ link }}" target="_blank">
 						<i class="fa fa-{{ name }}"></i>
 					</a>
 				{% endif %}
