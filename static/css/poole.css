@@ -352,6 +352,26 @@ tbody tr:nth-child(odd) th {
   color: #9a9a9a;
 }
 
+.post-tags {
+  display: inline;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+.post-tags ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.post-tags li {
+  display: inline;
+}
+.post-tags li:after {
+  content: ", ";
+}
+.post-tags li:last-child:after {
+  content: "";
+}
+
 /* Related posts */
 .related {
   padding-top: 2rem;

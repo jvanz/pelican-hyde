@@ -8,6 +8,16 @@
 					<a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
 				</h1>
 				<span class="post-date">{{ article.locale_date }}</span>
+				{% if article.tags %}
+					<span class="post-tags">
+						Tags:
+						<ul>
+							{% for tag in article.tags %}
+								<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+							{% endfor %}
+						</ul>
+					</span>
+				{% endif %}
 				<p>
 					{{ article.summary }}
 				</p>
