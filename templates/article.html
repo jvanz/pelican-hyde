@@ -15,17 +15,16 @@
 	{{ article.content }}
 
 	{% if article.tags %}
-		<hr>
-		<p><b>Tags:</b></p>
-		
-		<ul>
-			{% for tag in article.tags %}
-			<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
-			{% endfor %}
-		</ul>
+		<span class="post-tags">
+			Tags:
+			<ul>
+				{% for tag in article.tags %}
+					<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+				{% endfor %}
+			</ul>
+		</span>
 	{% endif %}
 
 	{% include 'fragments/disqus.html' %}
 </div>
 {% endblock %}
-
